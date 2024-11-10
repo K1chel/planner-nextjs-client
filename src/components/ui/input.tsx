@@ -23,7 +23,7 @@ export const Input = forwardRef<HTMLInputElement, InputFieldProps>(
 			<div className={`${extra}`}>
 				<label
 					htmlFor={id}
-					className={`text-sm text-white/60 dark:text-white ml-1.5 font-medium`}
+					className='text-sm text-black dark:text-white ml-1.5 font-medium'
 				>
 					{label}
 				</label>
