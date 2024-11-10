@@ -1,6 +1,10 @@
 import { Metadata } from 'next'
 
+import { Heading } from '@/components/ui/heading'
+
 import { NO_INDEX_PAGE } from '@/constants/seo'
+
+import { Statistics } from './statistics'
 
 export const metadata: Metadata = {
 	title: 'Dashboard',
@@ -8,7 +12,12 @@ export const metadata: Metadata = {
 }
 
 const Page = () => {
-	return <div>Page</div>
+	return (
+		<div>
+			<Heading title='Statistics' />
+			<Statistics />
+		</div>
+	)
 }
 
 export default Page
